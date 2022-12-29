@@ -1,0 +1,5 @@
+$hosts = Get-Content -Path 'C:\Users\carlm\OneDrive\Desktop\Text files\Login.txt'
+
+$hosts | ForEach-Object {
+    Write-Host "Login: $($_)" -BackgroundColor white -ForegroundColor black
+}
